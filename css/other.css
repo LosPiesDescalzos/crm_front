@@ -1,0 +1,164 @@
+.smth {
+    width: 100%;
+    height: 830px;
+    background-color: #F1FFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.smth-text-first {
+    margin-right: 500px;
+    min-width: 300px;
+}
+
+.smth h2 {
+    color: #293241;
+    width: 600px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+.smth h1 {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 30px 30px;
+    color: #293241;
+    text-align: left;
+}
+
+.smth-text-first h1::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    background-color: #EE6C4D;
+    height: 3px;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+.rectangle {
+    flex-shrink: 1;
+    margin-right: 50px;
+    height: 310px;
+    width: 285px;
+}
+
+.first {
+    background-color: #98C1D9;
+    border-radius: 60px;
+    transform: rotate(18deg);
+}
+
+.second {
+    margin-top: -150px;
+    margin-left: -150px;
+    background-color: #3D5A80;
+    border-radius: 60px;
+    transform: rotate(-18deg);
+}
+
+.first h2{
+    padding-top: 70px;
+    color: #293241;
+}
+
+.second h2{
+    padding-top: 100px;
+    color: #F1FFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.smth-text-second {
+    margin-left: 150px;
+    min-width: 300px;
+}
+
+.smth-text-second h1::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    background-color: #EE6C4D;
+    height: 3px;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+.third {
+    background-color: #98C1D9;
+    border-radius: 60px;
+    transform: rotate(-18deg);
+    margin-left: 20px;
+}
+
+.fourth {
+    margin-top: -150px;
+    margin-left: 170px;
+    background-color: #3D5A80;
+    border-radius: 60px;
+    transform: rotate(18deg);
+}
+
+
+#news {
+
+    background-color: #3D5A80;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+#news h1 {
+    color: #293241;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sub {
+    display: inline-flex;
+}
+
+.sub input {
+    height: 50px;
+    width: 190px;
+    color: #98C1D9;
+    text-align: center;
+}
+
+.sub button {
+    border: none;
+    outline: none;
+    height: 54px;
+    width: 190px;
+    background-color: #98C1D9;
+    color: #293241;
+}
+
+#feedback {
+    text-align: center;
+    height: 700px;
+    width: 100%;
+    background-color: #98C1D9;
+}
+
+#feedback .name {
+    color: #293241;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}

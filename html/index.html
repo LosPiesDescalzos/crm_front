@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/other.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/todo.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img class="logo block" alt="Logo" src="#">
+        <div class="container">
+            <a href="students.html" class="btn">Список Учеников</a>
+            <a href="calendar.html" class="btn">Расписание</a>
+            <a href="index.html" class="btn">Главная</a>
+            <a href="#" class="btn">Выпадающий</a>
+        </div>
+        <button class="btn">Выйти</button>
+    </div>
+</header>
+
+
+<div class="smth">
+    <div class="smth-text-first">
+        <h1>Сорудник.Имя</h1>
+        <h2>Сотрудник.Роль</h2>
+        <h2>Сотрудник.ДопСведения</h2>
+        <button class="btn" style="margin-left: 30px; margin-top: 30px">Редактировать</button>
+    </div>
+    <div>
+        <div class="photo" style="margin-left: -250px"></div>
+    </div>
+</div>
+
+<div id="todo">
+    <div id="right">
+        <h2>ToDo List</h2>
+        <div class="inputField he">
+            <input type="text" id="myInput" placeholder="Add your new todo">
+            <button class="addBtn">
+                <div id="add">Добавить</div>
+            </button>
+        </div>
+        <ul id="myUL" class="todoList">
+        </ul>
+        <div class="footer">
+            <span>You have <span class="pendingTasks"></span> pending tasks</span>
+            <button>Clear All</button>
+        </div>
+    </div>
+</div>
+<script src="../js/todo.js"></script>
+
+
+<div class="smth">
+    <div class="smth-text-first">
+        <h1>Бумажки</h1>
+        <h2>
+            Перейдите по ссылке и откроется интересующий вас документ
+            <a href="#">&#xf2bc;</a>
+
+        </h2>
+    </div>
+    <div>
+        <div class="rectangle first">
+            <h2>Реестр <br> проведенных  <br> уроков</h2></div>
+        <div class="rectangle second">
+            <h2>Выписка  <br> по зарплате</h2></div>
+    </div>
+</div>
+
+<div id="news">
+    <h1>Поиск</h1>
+    <div class="sub">
+        <input type="text" value="Что ищите?">
+        <button>Найти</button>
+    </div>
+</div>
+
+<div class="smth">
+    <div>
+        <div class="rectangle third"></div>
+        <div class="rectangle fourth"></div>
+    </div>
+    <div class="smth-text-second">
+        <h1>Какой-то заголовок</h1>
+        <h2>Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты
+            или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать
+            наличие самого текста или продемонстрировать типографику в деле.Это тестовый контент, который не должен
+            нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+        </h2>
+    </div>
+
+</div>
+
+
+<div id="feedback" class="slider">
+    <h1 class="name">Хз что</h1>
+    <div class="feedback-field">
+        <div class="photo"></div>
+        <div class="feedback-text">
+            <h1>Катя</h1>
+            <p>Все супер, это нечто! восторг! хочу еще! круто! ваааааааааааааааааааааааау</p>
+        </div>
+    </div>
+    <div class="feedback-field">
+        <div class="photo"></div>
+        <div class="feedback-text">
+            <h1>Соня</h1>
+            <p>Я в восторге!</p>
+        </div>
+    </div>
+    <div class="feedback-field">
+        <div class="photo"></div>
+        <div class="feedback-text">
+            <h1>Мартин</h1>
+            <p>Это было увлекательно</p>
+        </div>
+    </div>
+    <button class="prevFeedback">Prev</button>
+    <button class="nextFeedback">Next</button>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer-col">
+            <h4>О нас</h4>
+        </div>
+        <div class="footer-col">
+            <h4>Присоединяйся</h4>
+            <div class="social-links">
+                <a href="#">ТГ</a>
+                <a href="#">ВК</a>
+                <a href="#">Git</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Что-то еще</h4>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.photo {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: url(../img/sofa.jpg) no-repeat -100px ;
+    background-size: auto 380px;
+    margin-right: 50px;
+}

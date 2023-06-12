@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Календарь</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+    <link href="../css/calendar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <script async src="../js/calendar.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <img class="logo block" alt="Logo" src="#">
+        <div class="container">
+            <a href="students.html" class="btn">Список Учеников</a>
+            <a href="calendar.html" class="btn">Расписание</a>
+            <a href="index.html" class="btn">Главная</a>
+            <a href="#" class="btn">Выпадающий</a>
+        </div>
+        <button class="btn">Выйти</button>
+    </div>
+</header>
+
+<div id="schedule">
+    <div class="card">
+            <div id="events">
+                <br>
+                <p>Перетащите мероприятие или создайте новое кликом в календаре</p>
+                <br>
+                <div class="event">
+                    <i class="mdi"></i>Бокс
+                </div>
+                <div class="event">
+                    <i class="mdi"></i>Джиу
+                </div>
+                <div class="event">
+                    <i class="mdi"></i>Соревнование
+                </div>
+                <div class="event">
+                    <i class="mdi"></i>Выезд
+                </div>
+            </div>
+    </div>
+
+    <div id="cal-wrap">
+        <div id="cal-date">
+            <select id="cal-mth"></select>
+            <select id="cal-yr"></select>
+        </div>
+        <!-- КАЛЕНДАРЬ -->
+        <div id="cal-container">
+            <table id ="calendar"></table>
+        </div>
+        <!-- ФОРМА СОБЫТИЯ -->
+    </div>
+
+    <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required placeholder="Поле для добавления мероприятия"></textarea>
+        <input id="evt-close" type="button" value="Закрыть"/>
+        <input id="evt-del" type="button" value="Удалить"/>
+        <input id="evt-save" type="submit" value="Сохранить"/>
+    </form>
+
+</div>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer-col">
+            <h4>О нас</h4>
+        </div>
+        <div class="footer-col">
+            <h4>Присоединяйся</h4>
+            <div class="social-links">
+                <a href="https://t.me/LosPiesDescalzos">ТГ</a>
+                <a href="https://vk.com/pies_descalzos">ВК</a>
+                <a href="https://github.com/LosPiesDescalzos">Git</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Что-то еще</h4>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
