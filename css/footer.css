@@ -63,3 +63,16 @@ footer{
 @media (max-width: 680px) {
     .row {display: block;}
 }
+
+
+.copy-right-sec{
+    padding: 1.8rem;
+    background: #dddddd;
+    color: #3D5A80;
+    text-align: center;
+}
+
+.copy-right-sec a{
+    color: #3c3c3c;
+    font-weight: 500;
+}
