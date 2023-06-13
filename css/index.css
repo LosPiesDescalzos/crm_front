@@ -10,6 +10,7 @@
 }
 
 .smth-text-first {
+    width: 400px;
     padding-right: 500px;
     min-width: 300px;
 }
@@ -74,6 +75,8 @@
 
 
 .smth-text-second {
+    width: 600px;
+    margin-right: 30px;
     margin-left: 150px;
     min-width: 300px;
 }
@@ -93,7 +96,7 @@
     background-color: #98C1D9;
     border-radius: 60px;
     transform: rotate(-18deg);
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .fourth {
