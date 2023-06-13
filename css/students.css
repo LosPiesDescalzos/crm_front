@@ -9,18 +9,6 @@
     width: 80px;
 }
 
-#cards h1::before{
-    content: '';
-    position: absolute;
-    left: 30px;
-    bottom: 15px;
-    background-color: #EE6C4D;
-    height: 3px;
-    box-sizing: border-box;
-    width: 80px;
-}
-
-
 #cards {
     background-color: rgb(152, 193, 217, 0.7);
     height: 100%;
@@ -33,7 +21,9 @@
     margin-bottom: -30px;
     color: #293241;
 }
+
 #cards_elements{
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,6 +32,8 @@
 }
 
 .card {
+    flex-basis: calc(33.33% - 10px); /* 10px - отступы между карточками */
+    max-width: 300px; /* максимальная ширина карточки */
     margin: 45px 70px;
     width: calc((100% - 1200px) / 2);
     height: 600px;
