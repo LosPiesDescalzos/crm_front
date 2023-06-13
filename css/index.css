@@ -10,13 +10,12 @@
 }
 
 .smth-text-first {
-    margin-right: 500px;
+    padding-right: 500px;
     min-width: 300px;
 }
 
 .smth h2 {
     color: #293241;
-    width: 600px;
     text-align: left;
     margin-left: 30px;
 }
@@ -38,7 +37,7 @@
     background-color: #EE6C4D;
     height: 3px;
     box-sizing: border-box;
-    width: 600px;
+    width: 400px;
 }
 
 .rectangle {
@@ -71,16 +70,6 @@
     padding-top: 100px;
     color: #F1FFFF;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
