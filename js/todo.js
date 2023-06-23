@@ -73,11 +73,11 @@ todoList.addEventListener('click', function(ev) {
     localStorage.setItem("blockIsActive", "true");
 }, false);
 
+
+
 // window.onload = function() {
 //     let blockIsActive = localStorage.getItem("blockIsActive");
 //     if (blockIsActive === "true") {
-//
-//
 //             console.log(es)
 //
 // }}

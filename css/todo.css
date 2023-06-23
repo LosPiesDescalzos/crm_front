@@ -9,6 +9,9 @@ h2{
 }
 
 #todo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     background-color: #43638d;
 }
@@ -19,43 +22,6 @@ h2{
     margin-left: 310px;
     align-items: center;
     justify-content: center;
-}
-
-@media (max-width: 910px) {
-    #photo {
-        display: none;
-    }
-
-    #user-info h2 {
-        display: none;
-    }
-
-    #user-info p {
-        display: none;
-    }
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.left li a {
-    font-size: 14px;
-    color: #3c3c3c;
-    display: block;
-    padding: 12px;
-    margin-left: 150px;
-    text-decoration: none;
-}
-
-.left li a:hover {
-    width: 150px;
-    color: dimgrey;
-    background: #fff;
-    border-top-left-radius: 22px;
-    border-bottom-left-radius: 22px;
 }
 
 
@@ -143,6 +109,7 @@ ul {
     float: left;
     font-size: 15px;
     color: #293241;
+    background-color: #eee;
 }
 
 #myInput:focus {

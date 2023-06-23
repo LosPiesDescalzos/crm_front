@@ -3,12 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Календарь</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-    </style>
     <link href="../css/calendar.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/students.css">
     <link rel="stylesheet" href="../css/form.css">
@@ -17,12 +12,21 @@
 </head>
 <body>
 <header>
-    <div class="container">
-        <img class="logo block" alt="Logo" src="#">
-        <div class="container">
-            <a href="students.html" class="btn">Список Учеников</a>
-            <a href="calendar.html" class="btn">Расписание</a>
-            <a href="index.html" class="btn">Главная</a>
+    <div class="nav">
+        <div class="text">
+            <p>Nachos are</p>
+            <p>
+                <span class="word wisteria">tasty.</span>
+                <span class="word belize">wonderful.</span>
+                <span class="word pomegranate">fancy.</span>
+                <span class="word green">beautiful.</span>
+                <span class="word midnight">cheap.</span>
+            </p>
+        </div>
+        <div class="container_header">
+            <a href="students.html">Список Учеников</a>
+            <a href="calendar.html">Расписание</a>
+            <a href="index.html">Главная</a>
         </div>
         <button class="btn">Выйти</button>
     </div>
@@ -738,14 +742,13 @@
 <!--  КОНЕЦ АДМИН. ЧАСТИ -->
 
 <footer id="footer">
-    <div class="container">
+    <div class="nav_footer">
         <div class="footer-col">
             <h4>О нас</h4>
         </div>
         <div class="footer-col">
-            <h4>Присоединяйся</h4>
+            <h4>Документация</h4>
             <div class="social-links">
-                <a href="https://t.me/LosPiesDescalzos">ТГ</a>
                 <a href="https://vk.com/pies_descalzos">ВК</a>
                 <a href="https://github.com/LosPiesDescalzos">Git</a>
             </div>
@@ -761,5 +764,6 @@
         С любовью для вас команда <a href="#">Команда.Название</a>
     </div>
 </section>
+<script src="../js/text.js"></script>
 </body>
 </html>

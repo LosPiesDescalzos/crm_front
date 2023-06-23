@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/*ОБЩИЕ СТИЛИ*/
 *{
     margin: 0;
     padding: 0;
@@ -11,41 +14,198 @@ a {
 }
 
 button {
-    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    color: #293241;
+    text-align: center;
 }
 
 
-.photo {
-    width: 380px;
-    height: 380px;
-    border-radius: 50%;
-    background: url(../img/sofa.jpg) no-repeat -100px ;
-    background-size: auto 380px;
+ul{
+    list-style: none;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #EE6C4D;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+}
+
+
+/*HEADER*/
+.nav{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3D5A80;
+    align-items: center;
+    height: 135px;
+    width: 100%;
+    gap: 6vw;
+}
+
+.container_header{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.nav button{
+    font-size: 1.5em;
+    width: 100px;
+    margin-right: 3vw;
+}
+
+@media (max-width: 840px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .nav button{
+        font-size: 1.3em;
+        width: 70px;
+    }
+}
+
+/*МЕНЯЮЩИЙСЯ ТЕКСТ*/
+.text {
+    text-align: center;
+    margin-left: 50px;
     margin-right: 50px;
 }
 
+.text p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.word {
+    position: absolute;
+    width: 220px;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/*FOOTER*/
+.nav_footer {
+    background-color: #3D5A80;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.footer-col{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media (max-width: 860px) {
+    .footer-col{
+        font-size: 1.3em;
+    }
+
+    .nav_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 250px;
+    }
+    .footer-col:nth-child(-n+2){
+        margin-bottom: 20px;
+    }
+}
+
+
+/*КОПИРАЙТ*/
+#copy-right{
+    padding-top: 2vw;
+    height: 4vw;
+    background: #dddddd;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+#copy-right a{
+    color: #3D5A80;
+}
+
+@media (max-width: 780px) {
+    #copy-right {
+        height: 30px;
+    }
+
+    #copy-right p {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    #copy-right a {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
 
 
 
-
-
-/*:root {*/
-/*    --var-bgcolor: white;*/
-/*    --var-fontcolor: black;*/
-/*    --var-bg: #3c3c3c;*/
-/*    --var-ft: white;*/
-
-/*}*/
-
-/*[dark] {*/
-/*    --var-bgcolor: #3c3c3c;*/
-/*    --var-fontcolor: white;*/
-/*    --var-bg: white;*/
-/*    --var-ft: black;*/
-/*}*/
-
-
-/*footer{*/
-/*    float: right;*/
-/*}*/
 

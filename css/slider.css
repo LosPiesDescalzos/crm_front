@@ -60,20 +60,10 @@
     transform: translateY(-50%);
     z-index: 10;
     color: #24262b;
+    width: 100px;
 }
 
-.slider button {
-    width: 60px;
-    height: 25px;
-}
 
-.slider button.prev {
-    left: 10px;
-}
-
-.slider button.next {
-    right: 10px;
-}
 
 .slider button.prevFeedback {
     left: 20px;
