@@ -1,29 +1,29 @@
-let currentFeedbackIndex = 0;
-const feedbacks = document.querySelectorAll('.slider .feedback-field');
-const prevBtnFeedback = document.querySelector('.slider .prevFeedback');
-const nextBtnFeedback = document.querySelector('.slider .nextFeedback');
+let currentSliderIndex = 0;
+const sliders = document.querySelectorAll('.slider .slider-field');
+const prevBtnSlider = document.querySelector('.slider .prevSlider');
+const nextBtnSlider = document.querySelector('.slider .nextSlider');
 
 
-function showFeedback(index) {
-    feedbacks.forEach( feedback => feedback.classList.remove('active'));
-    feedbacks[index].classList.add('active');
-    currentFeedbackIndex = index;
+function showSlider(index) {
+    sliders.forEach( feedback => feedback.classList.remove('active'));
+    sliders[index].classList.add('active');
+    currentSliderIndex = index;
 }
 
-prevBtnFeedback.addEventListener('click', () => {
-    if (currentFeedbackIndex === 0) {
-        showFeedback(feedbacks.length - 1);
+prevBtnSlider.addEventListener('click', () => {
+    if (currentSliderIndex === 0) {
+        showSlider(sliders.length - 1);
     } else {
-        showFeedback(currentFeedbackIndex - 1);
+        showSlider(currentSliderIndex - 1);
     }
 });
 
-nextBtnFeedback.addEventListener('click', () => {
-    if (currentFeedbackIndex === feedbacks.length - 1) {
-        showFeedback(0);
+nextBtnSlider.addEventListener('click', () => {
+    if (currentSliderIndex === sliders.length - 1) {
+        showSlider(0);
     } else {
-        showFeedback(currentFeedbackIndex + 1);
+        showSlider(currentSliderIndex + 1);
     }
 });
 
-showFeedback(0);
+showSlider(0);

@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 /*ОБЩИЕ СТИЛИ*/
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 1em;
+}
+
 *{
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    border: none;
 }
 
 a {
@@ -48,17 +57,18 @@ ul{
 }
 
 .container_header{
-    font-size: 1.2em;
+    padding-right: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3vw;
+    padding-left: 1em;
 }
 
 .nav button{
-    font-size: 1.5em;
     width: 100px;
+    font-size: 1em;
     margin-right: 3vw;
 }
 
@@ -75,7 +85,6 @@ ul{
     }
 
     .nav button{
-        font-size: 1.3em;
         width: 70px;
     }
 }
@@ -133,7 +142,6 @@ ul{
 }
 
 .footer-col{
-    font-size: 1.5em;
     text-align: center;
 }
 
@@ -161,10 +169,6 @@ ul{
 }
 
 @media (max-width: 860px) {
-    .footer-col{
-        font-size: 1.3em;
-    }
-
     .nav_footer {
         display: flex;
         flex-direction: column;
@@ -201,7 +205,6 @@ ul{
     }
 
     #copy-right a {
-        font-size: 16px;
         line-height: normal;
     }
 }

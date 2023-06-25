@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/slider.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/todo.css">
-    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/rectangles.css">
+
 
 </head>
 <body>
@@ -34,11 +34,11 @@
 </header>
 
 
-<div class="smth">
-    <div class="smth-text-first">
-        <h1>Сорудник.Имя</h1>
-        <h2>Сотрудник.Роль</h2>
-        <h2>Сотрудник.ДопСведения</h2>
+<div class="container">
+    <div class="container-text">
+        <h3>Сорудник.Имя</h3>
+        <h4>Сотрудник.Роль</h4>
+        <h4>Сотрудник.ДопСведения</h4>
         <button class="btn" style="margin-left: 30px; margin-top: 30px">Редактировать</button>
     </div>
     <div>
@@ -47,13 +47,10 @@
 </div>
 
 <div id="todo">
-    <div id="right">
-        <h2>ToDo List</h2>
-        <div class="inputField he">
+        <h3>Трекер задач</h3>
+        <div class="inputField">
             <input type="text" id="myInput" placeholder="Add your new todo">
-            <button class="addBtn">
-                <div id="add">Добавить</div>
-            </button>
+            <button class="addBtn">Добавить</button>
         </div>
         <ul id="myUL" class="todoList">
         </ul>
@@ -61,79 +58,71 @@
             <span>You have <span class="pendingTasks"></span> pending tasks</span>
             <button>Clear All</button>
         </div>
-    </div>
 </div>
 <script src="../js/todo.js"></script>
 
 
-<div class="smth">
-    <div class="smth-text-first">
-        <h1>Бумажки</h1>
-        <h2>
-            Перейдите по ссылке и откроется интересующий вас документ
-
-        </h2>
-    </div>
+<div class="container">
     <div>
-        <div class="rectangle first">
-            <a href="#"><h2>Реестр <br> проведенных <br> уроков</h2></a></div>
-        <div class="rectangle second">
-            <a href="#"><h2>Выписка <br> по зарплате</h2></a></div>
+        <div class="rectangle rectangle-left rectangle-back">
+            <a href="#"><h2 style="font-size: 1.2em">Реестр проведенных уроков</h2></a>
+        </div>
+        <div class="rectangle rectangle-right rectangle-front">
+            <a href="#"><h2 style="font-size: 1.2em; padding-top: 3em">Выписка по зарплате</h2></a>
+        </div>
+    </div>
+    <div class="container-text">
+        <h3>Бумаги</h3>
+        <h4>Перейдите по ссылке и откроется интересующий вас документ</h4>
     </div>
 </div>
 
-<div id="news">
-<!--    <h1>Поиск</h1>-->
-<!--    <div class="sub">-->
-<!--        <input type="text" value="Что ищите?">-->
-<!--        <button>Найти</button>-->
-<!--    </div>-->
-    <form id="form_search">
-        <input id="search" type="text" required>
-        <span class="caret"></span>
+
+<div id="search_div">
+    <h1>Поиск</h1>
+    <div class="sub">
+        <input type="text" placeholder="Что желаете найти?">
         <button>Найти</button>
-    </form>
+    </div>
+
 </div>
 
-<div class="smth">
+
+<div class="container">
+    <div class="container-text">
+        <h3>Достижения</h3>
+        <h4>Тут очень увлекательный текст про достижения</h4>
+    </div>
     <div>
-        <div class="rectangle third"></div>
-        <div class="rectangle fourth"></div>
+        <div class="rectangle rectangle-right rectangle-back">
+            <a href="#"><h2 style="padding-top: 1em">Награды</h2><h1>28</h1></a></div>
+        <div class="rectangle rectangle-left rectangle-front">
+            <a href="#"><h2 style="padding-top: 2em">Участие</h2><h1>39</h1></a></div>
     </div>
-    <div class="smth-text-second">
-        <h1>Какой-то заголовок</h1>
-        <h2>Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты
-            или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать
-            наличие самого текста или продемонстрировать типографику в деле.Это тестовый контент, который не должен
-            нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
-        </h2>
-    </div>
-
 </div>
 
-
-<div id="feedback" class="slider">
-    <h1 class="name">Слайдер</h1>
-    <div class="feedback-field">
-        <div class="feedback-text">
-            <h1>Заголовок1</h1>
+<div class="slider">
+    <h3 class="name">Слайдер</h3>
+    <div class="slider-field">
+        <div class="slider-text">
+            <h4>Заголовок1</h4>
             <p>Тут какой-то текст</p>
         </div>
     </div>
-    <div class="feedback-field">
-        <div class="feedback-text">
-            <h1>Заголовок2</h1>
+    <div class="slider-field">
+        <div class="slider-text">
+            <h4>Заголовок2</h4>
             <p>Другой текст</p>
         </div>
     </div>
-    <div class="feedback-field">
-        <div class="feedback-text">
-            <h1>Заголовок3</h1>
+    <div class="slider-field">
+        <div class="slider-text">
+            <h4>Заголовок3</h4>
             <p>И еще один текст</p>
         </div>
     </div>
-    <button class="prevFeedback">Prev</button>
-    <button class="nextFeedback">Next</button>
+    <button class="prevSlider">Prev</button>
+    <button class="nextSlider">Next</button>
 </div>
 
 

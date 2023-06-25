@@ -1,29 +1,24 @@
 .slider {
     position: relative;
     width: 100%;
-    height: 926px;
+    height: 10em;
     overflow: hidden;
-}
-
-
-#feedback {
     text-align: center;
-    height: 700px;
-    width: 100%;
     background-color: #98C1D9;
     display: flex;
     justify-content: center;
 }
 
 
-#feedback .name {
+
+.slider .name {
     color: #293241;
     padding-top: 20px;
     padding-bottom: 60px;
 }
 
 
-.slider .feedback-field {
+.slider .slider-field {
     position: absolute;
     margin-bottom: 20px;
     opacity: 0;
@@ -31,28 +26,22 @@
 }
 
 
-.slider .feedback-text {
+.slider .slider-text {
     color: #293241;
 }
 
-.slider .feedback-text h1 {
+.slider .slider-text h1 {
     color: #293241;
     padding-bottom: 60px;
 }
 
-.slider .feedback-text p {
+.slider .slider-text p {
     color: #293241;
 }
 
-.slider .feedback-field.active {
+.slider .slider-field.active {
     opacity: 1;
 }
-
-
-
-
-
-
 
 .slider button {
     position: absolute;
@@ -63,12 +52,10 @@
     width: 100px;
 }
 
-
-
-.slider button.prevFeedback {
+.slider button.prevSlider {
     left: 20px;
 }
 
-.slider button.nextFeedback {
+.slider button.nextSlider {
     right: 20px;
 }
